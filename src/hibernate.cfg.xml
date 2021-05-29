@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    
+       <!--  configuración antigua  ... 
+       <session-factory name="Sesionsgvdb">
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
+        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sgvdb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        -->
+        
+        <!-- configuración nueva -->
+        <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sgvdb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        
+         <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosPerfilVertical" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosArchivo" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosTodos" />        
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosPerfilTemporarioMes" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosPerfilTemporarioHora" />        
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DatosFrecuenciaVelocidad" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.DireccionVientoRangos" />
+		<mapping class="com.paquete.graficos.eolicos.basededatos.Usuario" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.ViewDatosAltura3" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.ViewDatosAltura2" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.ViewDatosAltura1" />
+        <mapping class="com.paquete.graficos.eolicos.basededatos.ViewDatosComunes" />
+    </session-factory>
+</hibernate-configuration>

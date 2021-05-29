@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatosArchivos>
+	<DatosArchivo>
+		<idDatosArchivo>1</idDatosArchivo>
+		<lugarAdquisicion>AACCCCCC</lugarAdquisicion>
+		<deadband1>90</deadband1>
+		<deadband2>90</deadband2>
+		<sobreescritura>NO</sobreescritura>
+		<altura1>10</altura1>
+		<altura2>11</altura2>
+		<intervalo>10</intervalo>
+	</DatosArchivo>
+</DatosArchivos>
+

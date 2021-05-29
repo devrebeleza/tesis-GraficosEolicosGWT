@@ -1,0 +1,2 @@
+serviceClass: com.paquete.graficos.eolicos.client.AccesoDatosService
+path: B0EB941D3FF77D2468B463FD69EDC393.gwt.rpc

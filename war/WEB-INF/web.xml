@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets  antiguo
+  <servlet>
+    <servlet-name>rpcServlet</servlet-name>
+    <servlet-class>com.paquete.graficos.eolicos.server.RpcServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>rpcServlet</servlet-name>
+    <url-pattern>/graficoseolicosgwt/rpc</url-pattern>
+  </servlet-mapping>
+
+-->
+
+<!-- Ubicación de otro Servlet -->
+  
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.paquete.graficos.eolicos.server.AccesoDatosServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/graficoseolicosgwt/greet</url-pattern>
+  </servlet-mapping>-->
+
+
+<!-- ubicación de FileUploadServlet -->
+	<servlet>
+  		<servlet-name>FileUploadServlet</servlet-name>
+  		<servlet-class>com.paquete.graficos.eolicos.server.FileUploadServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/uploadservlet</url-pattern>
+  	</servlet-mapping>
+
+
+<!--Servlets para el upload -->
+<servlet>
+      <servlet-name>uploadServlet</servlet-name>
+      <servlet-class>com.paquete.graficos.eolicos.server.FileUploadServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+      <servlet-name>uploadServlet</servlet-name>
+      <url-pattern>/graficoseolicosgwt/upload</url-pattern>
+</servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>GraficosEolicosGWT.html</welcome-file>
+  </welcome-file-list>
+
+
+
+
+
+</web-app>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='graficoseolicosgwt'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+  
+  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+  <inherits name="com.smartgwt.SmartGwt"/>   
+  <inherits name="com.google.gwt.resources.Resources"/>                   
+  <inherits name="com.google.gwt.visualization.Visualization"/>
+  
+  <!-- Other module inherits para Document <inherits name="com.google.gwt.xml.Client"/>                                      -->
+  <inherits name='com.google.gwt.user.User'/>
+  <!-- <inherits name='confighereda.basededatos'/> 
+  <inherits name='confighereda.funcionescarga'/>
+  <inherits name='confighereda.funcionesXML'/>
+  <inherits name='confighereda.hibernate'/>
+  <inherits name='confighereda.principal'/> -->
+ 
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.paquete.graficos.eolicos.client.MainGraficosEolicosGWT'/>
+
+  <!-- Specify the paths for translatable code                    -->
+   <!--<source path='basededatos'/>   <source path='servXML'/>   -->
+  
+  <source path='client'/>
+ 
+  <source path='init'/>
+  <source path='data'/>
+  <source path='shared'/>
+  <source path='view'/>
+  <source path='widget'/>  
+    
+
+ 
+
+</module>
